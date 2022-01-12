@@ -1,6 +1,6 @@
 # pycounts_sj
 
-A package for counting words
+Calculate word counts in a text file!
 
 ## Installation
 
@@ -10,7 +10,19 @@ $ pip install pycounts_sj
 
 ## Usage
 
-- TODO
+`pycounts` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from pycounts_sj.pycounts_sj import count_words
+from pycounts_sj.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
 
 ## Contributing
 
